@@ -1,10 +1,14 @@
 body {
-    background: orange;
+    background: black;
     font-size: 20px;
     color: whitesmoke;
 }
 h1 {
     color: #00ffff;
+    background: moccasin;
+}
+.whata {
+    background: white;
 }
 #burger {
     font-size: 15px;
@@ -16,5 +20,11 @@ h1 {
 }
 #fries {
     font-size: 10px;
-    color: pink;
+    color: red;
+}
+.strawberry {
+    background: red;
+}
+.blueberry {
+    background: blue;
 }
