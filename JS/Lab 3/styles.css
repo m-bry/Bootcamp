@@ -1,0 +1,8 @@
+*{
+    background-color: lightblue;
+    color: black;
+}
+
+.completed {
+    color: red;
+}
