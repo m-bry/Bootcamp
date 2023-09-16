@@ -19,6 +19,10 @@ function majFunc(rootNote) {
     for (var key in musicArray) {
         evalArray1.push(musicArray[key].noteName.indexOf(rootNote));
     }
+    let newAlphabet = basicAlphabet.slice(basicAlphabet.indexOf(naturalNote));
+    newAlphabet = newAlphabet.concat(basicAlphabet.slice(0, basicAlphabet.indexOf(naturalNote)));
+    // console.log(newAlphabet);
+    let evalArray3 = [];
 
     scaleRoot = (musicArray[evalArray1.indexOf(1)].value);
     noteValueArray = [scaleRoot, (scaleRoot + 2) % 12, (scaleRoot + 4) % 12, (scaleRoot + 5) % 12, (scaleRoot + 7) % 12, (scaleRoot + 9) % 12, (scaleRoot + 11) % 12];
@@ -27,10 +31,23 @@ function majFunc(rootNote) {
         for (var key in musicArray) {
             if (item === musicArray[key].value) {
                 evalArray2.push((musicArray[key].noteName));
+                for (i = 0; i < evalArray2.length; i++) {
+                    evalArray3.push(evalArray2[i]);
+                }
             }
+            
         }
-        console.log(evalArray2)
     })
+    let letter;
+    for (i = 0; i < evalArray3.length; i++){
+        let handler = evalArray3[i];
+        let letterHandler;
+        let alphaLetter = newAlphabet[i].shift;
+        for (j = 0; j < handler.length; j++){
+            letterHandler = handler.shift();
+            console.log(alphaLetter, letterHandler)
+        }
+    }
 };
 
-majFunc(`A`);
+majFunc(`B`);
