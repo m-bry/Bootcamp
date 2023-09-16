@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs', {data: 'Contact Page'})%>
+
+<h1>Contact Page</h1>
+
+<form action="/doggyhorse" method="get">
+
+    <label for="lName">Last Name:</label>
+    <input type='text' name="lName" id="lName" placeholder="Last Name">
+    <label for="fName">First Name:</label>
+    <input type='text' name="fName" id="fName" placeholder="First Name">
+
+    <button type="submit">Submit</button>
+</form>
+
+<%- include('partials/footer.ejs')%>

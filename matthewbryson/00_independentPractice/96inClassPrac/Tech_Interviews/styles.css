@@ -1,0 +1,35 @@
+/* MEDIA QUERY FOR DESKTOP */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .flex-container img {
+        padding: 1.5% 1.5%;
+        width: 30%;
+    }
+}
+/* MEDIA QUERY FOR TABLET */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .flex-container img {
+        padding: 1.5% 1.5%;
+        width: 47%;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE DEVICES */
+@media (min-width: 0px) and (max-width: 480px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-container img {
+        padding: 1.5% 1.5%;
+        width: 97%
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome to the Brunch Cafe</title>
+    </head>
+    <body>
+        <div id="cafecontactHdr1">
+            <h1>Get in touch with us!</h1>
+        </div>
+        <div id="cafecontactIntro">
+            <p>Please use this form to make online orders. 
+            Be sure to include your address, and we will deliver to you within 24 hours!</p>
+        </div>
+        <form id="orderForm">
+                <h3>First Name:</h3>
+                <input  type="text" id="orderFirstname"
+                placeholder="Bill" required>
+                <h3>Last Name:</h3>
+                <input type="text" id="orderLastname"
+                placeholder="Watterson" required>
+                <h3>Email:</h3>
+                <input type="email" id="orderEmail"
+                placeholder="Put email address here" required>
+                <h3>Phone number:</h3>
+                <input type="tel" id="orderPhone" 
+                placeholder="777-777-7777" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+                <br>
+                <textarea id="orderOrder" placeholder="What would you like to order?" 
+                cols="50" rows="10" required></textarea>
+                <br>
+                <p>Would you like a side of fries?</p>
+                <div id="orderSide">
+                    <input type="radio" id ="sideYes" 
+                    name="nameSide" value="Yes" required>
+                    <label for="sideYes">Yes</label>
+                    <br>
+                    <input type="radio" id ="sideNo" 
+                    name="nameSide" value="No" required>
+                    <label for="sideNo">No</label>
+                    <br>
+                    <input type="radio" id ="sideSurprise" 
+                    name="nameSide" value="Surprise" required>
+                    <label for="sideSurprise">Surprise me</label>
+                </div><br>
+                <input type="submit" id="orderSubmit">
+        </form>
+        <div id="cafecontactLinks">
+            <p> If you would like to go back to the home page, click <a href="CafeHome.html">here</a>.</p>
+            <p>To return to our menu, click <a href="CafeMenu.html">here</a>.</p>
+        </div>
+    </body>
+</html>

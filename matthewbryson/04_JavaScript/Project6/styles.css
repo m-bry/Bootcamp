@@ -1,0 +1,17 @@
+body {
+    background-color: #4FC3F7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clock-container {
+    text-align: center;
+  }
+  
+  #time {
+    font-size: 48px;
+    color: white;
+  }
+  

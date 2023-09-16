@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hotel Room Service</title>
+        <style type="text/css">
+            body{
+                background-color: white;
+            }
+            #block_form1 {
+                outline: solid 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Hdr1">
+            <h1>Hotel Room Service</h1>
+        </div>
+        <div id="Hdr2">
+            <h3>Welcome to our hotel! We hope you enjoy your stay.</h3>
+        </div>
+        <div id="Intro">
+            <p>We value you as our guest! use this online form to have a hot, 
+            delicious breakfast delivered to your room. Please fill out this 
+            form before midnight so that we can make proper accomodations. All
+            meals are served before 10AM. Tipping is encouraged.</p>
+        </div>
+        <form id="block_form1">
+            <p><u>Hotel Guest Contact</u></p>
+            <div id="block_nameFirst">
+                <label for="nameFirst">First name:</label>
+                <input type="text" id="nameFirst" required>
+            </div><br>
+            <div id="block_nameLast">
+                <label for="nameLast">Last name:</label>
+                <input type="text" id="nameLast" required>
+            </div><br>
+            <div id="block_numberRoom">
+                <label for="numberRoom">Room number:</label>
+                <input type="password" id="numberRoom" required>
+            </div>
+        </form><br>
+        <form id="block_form2">
+            <div id="timeslct">
+                <label for="timesrvSlct">What time would you like to be served?</label>
+                <select name="timesrvSlct">
+                    <option value="600A">6:00AM</option>
+                    <option value="630A">6:30AM</option>
+                    <option value="700A">7:00AM</option>
+                    <option value="730A">7:30AM</option>
+                    <option value="800A">8:00AM</option>
+                    <option value="830A">8:30AM</option>
+                    <option value="900A">9:00AM</option>
+                    <option value="930A">9:30AM</option>
+                    <option value="1000A">10:00AM</option>
+                </select>
+            </div>
+            <div id="entree">
+                <p>Please choose your entree:</p>
+<textarea cols="50" rows="10">Waffles and Chicken
+Pancakes and Syrup
+Hashbrowns
+Bacon and Eggs
+Boring ol' toast</textarea>
+            </div>
+            <p>Would you like extra butter?</p>
+            <div id="ButterBox" name="butter">
+                <label for="checkYes">Yes</label>
+                <input id="checkYes" type="checkbox" name="butter" value="Yes">
+                <label for="checkNo">No</label>
+                <input id="checkNo" type="checkbox" name="butter" value="No">
+                <label for="checkSurprise">Surprise me</label>
+                <input id="checkSurprise" type="checkbox" name="butter" value="Surprise">
+            </div>
+            <input type="submit">
+        </form>
+        <div></div>
+        <div></div>
+    </body>
+</html>
