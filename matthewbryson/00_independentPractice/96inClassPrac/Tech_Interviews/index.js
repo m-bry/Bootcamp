@@ -18,7 +18,9 @@ function mockFunc() {
             mockArray.push(i);
         }
     }
-    mockArray.forEach((item)=>console.log(item));
+    // mockArray.forEach((item)=>console.log(item));
     return mockArray;
 }
 mockFunc();
+
+module.exports = mockFunc;
