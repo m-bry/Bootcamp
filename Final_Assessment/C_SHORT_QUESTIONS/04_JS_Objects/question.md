@@ -51,6 +51,7 @@
 
 
 3. Why does this comparison return false?  Please explain.
+
     3. Answer: This statement does not compare the values within the objects, but rather the objects themselves. As discussed in the previous question, it's all about where the object is stored in memory. Since these two objects are defined separately, they point to different addresses in memory, therefore returning "false" when comparing the two. If you compare the values of the keys within the two objects you'll get "true" because they are equal values, but this doesn't mean the objects are equal to eachother (or in other words, "the same").
 
 
