@@ -30,3 +30,5 @@ function stringComparison(str1, str2){
 }
 
 console.log(stringComparison(samp1, samp2));
+
+//This code has passed smoke test, not any mocha or chai tests.
