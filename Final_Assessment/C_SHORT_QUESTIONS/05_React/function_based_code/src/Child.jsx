@@ -1,11 +1,13 @@
 function Child(props) {
+  const { name } = props;
+  const { handleChange } = props;
   return (
     <>
       <input 
         type="text" 
         placeholder="Please Enter Your Name"
-        onChange={props.handleChange}
-        value={props.setName}
+        onChange={handleChange}
+        value={name}
         />
     </>
   )
