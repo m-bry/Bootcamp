@@ -19,7 +19,7 @@ function mockFunc() {
         }
     }
     // mockArray.forEach((item)=>console.log(item));
-    return mockArray;
+    return mockArray
 }
 mockFunc();
 

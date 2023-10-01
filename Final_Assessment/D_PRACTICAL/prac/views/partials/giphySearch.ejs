@@ -1,0 +1,13 @@
+<h1>Giphy Searcher</h1>
+<form action="/search" method="get">
+    <input type="search" name="q" placeholder="Search Giphy!">
+    <input type="submit">
+</form>
+<% if (data != null){ %>
+    <h4><a href="/home"><u>Click here to go back to trending</u></a></h4>
+    <h2><em>Search Results:</em></h2>
+<% data.forEach((el)=>{ %>
+<div class = "resultBox">
+    <iframe src ="<%= el.embed_url %>"></iframe>
+</div>
+<% })};%>

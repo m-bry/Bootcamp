@@ -1,0 +1,7 @@
+<% if (trending != null){ %>
+    <h3><em>Trending Results</em></h3>
+    <div class = "trendBox">
+        <% trending.forEach((el)=>{ %>
+        <iframe src ="<%= el.embed_url %>"></iframe>
+        <% })};%>
+    </div>

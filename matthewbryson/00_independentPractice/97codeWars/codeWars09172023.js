@@ -191,10 +191,19 @@
 // The main idea is to count all the occurring characters in a string. 
 // If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
 // What if the string is empty? Then the result should be empty object literal, {}.
-function count(string) {
-    let letterArray = string.match(/[a-zA-z]/g)
-    return letterArray.sort();
-  }
-console.log(count('Llama'));
+//FORFEITED; TOP SOLUTION
+// function count (string) {  
+//   var count = {};
+//   string.split('').forEach(function(s) {
+//      console.log(count[s] ? count[s]++ : count[s] = 1);
+//   });
+//   return count;
+// }
 
-//testing a lot
+// console.log(count('Llama'));
+
+//SOLUTION
+// because count is an object. 
+// the ternary operation is checkin if the property (key: value) is in the count object already. 
+// if yes, it adds 1 to the stored value, if not it sets/adds the property.
+// so if string = 'example', the first run is going to see that count is empty, so count['e'] doesn't exist, and it will set count[e] = 1.
